@@ -19,7 +19,14 @@
                 "element": {"#": "fetch"},
                 "enabled": true,
                 "label": "Fetch"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "textArea": {
             "prototype": "digit/ui/text-area.reel",
