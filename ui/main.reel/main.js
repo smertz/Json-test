@@ -2,8 +2,10 @@
  * @module ui/main.reel
  * @requires montage/ui/component
  */
-var Component = require("montage/ui/component").Component;
-var JsonP = require("montage-jsonp/core/jsonp").Jsonp;
+var Component = require("montage/ui/component").Component,
+    Params = require('query-params'),
+    Url = require("url"),
+    JsonP = require("montage-jsonp/core/jsonp").Jsonp;
 
 /**
  * @class Main
