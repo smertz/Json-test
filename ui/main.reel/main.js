@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component,
-    JsonP = require("montage-jsonp/core/jsonp").Jsonp;
+    Jsonp = require("montage-jsonp/core/jsonp").Jsonp;
 
 /**
  * @class Main
