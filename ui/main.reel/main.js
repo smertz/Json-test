@@ -14,7 +14,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
-    }
+    },
     
     handleButtonAction: {
         value: function() {
