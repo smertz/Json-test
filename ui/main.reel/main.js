@@ -15,4 +15,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     }
+    
+    handleButtonAction: {
+        value: function() {
+            var templateObjects = this.templateObjects;
+
+            Jsonp.makeRequest(templateObjects.url.value)
+            .then(function(response) {
+                templateObjects.result.value = JSON.stringify(response, null, 2);
+            });
+        }
+    }
+
 });
