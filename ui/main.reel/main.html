@@ -2,21 +2,51 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "fetch": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "fetch"},
+                "enabled": true,
+                "label": "Fetch"
+            }
+        },
+        "textArea": {
+            "prototype": "digit/ui/text-area.reel",
+            "properties": {
+                "element": {"#": "textArea"},
+                "placeholderValue": "Result",
+                "value": ""
+            }
+        },
+        "url": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "url"},
+                "placeholderValue": "Json Url"
             }
         }
+    }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <input data-montage-id="url" type="text">
+        <button data-montage-id="fetch"></button>
+        <hr>
+
+        </hr>
+        <textarea data-montage-id="textArea"></textarea>
+    </div>
 </body>
 </html>
