@@ -4,7 +4,8 @@
     "dependencies": {
         "montage": "~0.14.0",
         "digit": "~0.5.0",
-        "montage-jsonp": "1.0.1"
+        "montage-jsonp": "1.0.1",
+        "query-params": "0.0.1"
     },
     "devDependencies": {
         "montage-testing": "~0.4.0"
