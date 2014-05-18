@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component,
-    Params = require('query-params'),
+    String = require('query-string'),
     Url = require("url"),
     JsonP = require("montage-jsonp/core/jsonp").Jsonp;
 
